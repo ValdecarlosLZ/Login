@@ -118,21 +118,34 @@
         }
     </style>
     <script>
-        function validateFormNome() {
-            let U = document.forms["user"]["Nome"].value;
+        function validateForm() {
+            let U = document.forms["request"]["user"].value;
             if (U == "") {
-                alert("Digite seu nome");
+                alert("Preencha o campo corretamente");
+                return false
+            }
+
+            let S = document.forms["request"]["passqord"].value;
+            if (S == "") {
+                alert("Preencha o campo corretamente");
                 return false
             }
         }
 
-        function validateFormSenha() {
-            let S = document.forms["password"]["Senha"].value;
-            if (S == "") {
-                alert("Digite sua senha");
-                return false
-            }
+        const button = document.querySelector('input');
+            button.addEventListener('click', login);
+        async button.onclick = function login(){
+            return youtube.com
+            
         }
+
+        // function validateFormSenha() {
+        //     let S = document.forms["request"]["passqord"].value;
+        //     if (S == "") {
+        //         alert("Preencha o campo corretamente");
+        //         return false
+        //     }
+        // }
     </script>
 </head>
 
@@ -145,15 +158,14 @@
                     <h3 id="log">LOUZERS</h3>
                 </div>
                 <h4>Login</h4>
-                <form action="/">
+                <form name="request" action="/action_page.php" onsubmit="return validateForm()" method="post">
                     <div id="ordem">
-                        <input type="text" name="user" placeholder="Usuário" id="usuario" required
-                            onsubmit="return validateFormNome()">
-                        <input type="password" name="password" placeholder="Senha" id="senha" required minlength="8"
-                            onsubmit="return validateFormSenha()">
+
+                        <input type="text" name="user" placeholder="Usuário" id="usuario" required>
+                        <input type="password" name="password" placeholder="Senha" id="senha" required minlength="8">
                     </div>
                     <div id="botao">
-                        <a href="#" class="button" target="_blank" method="post">Logar</a>
+                        <input type="button" a="www.youtube.com" class="button" target="_blank" method="post" value="Logar" onclick="login"/>
                         <br>
                     </div>
                 </form>
