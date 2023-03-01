@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html >
 
-<head>
+<head lang="pt-br">
     <meta charset="UTF-8">
 
     <title>Login</title>
@@ -117,9 +117,26 @@
             margin-bottom: 5%;
         }
     </style>
+    <script>
+        function validateFormNome(){
+            let U= document.forms["user"]["Nome"].value;
+            if (U == ""){
+                alert("Digite seu nome");
+                return false
+            }
+        }
+
+        function validateFormSenha(){
+            let S = document.forms["password"]["Senha"].value;
+            if (S == ""){
+                alert("Digite sua senha");
+                return false
+            }
+        }
+    </script>
 </head>
 
-<body>
+<body translate="no">
     <header>
         <nav>
 
@@ -129,15 +146,15 @@
                 </div>
                 <h4>Login</h4>
                 <div id="ordem">
-                    <input type="text" name="Usuario" placeholder="Usuário" id="usuario">
-                    <input type="password" name="Senha" placeholder="Senha" id="senha">
+                    <input type="text" name="user" placeholder="Usuário" id="usuario" required onsubmit="return validateFormNome()">
+                    <input type="password" name="password" placeholder="Senha" id="senha" required minlength="8" onsubmit="return validateFormSenha()">
                 </div>
                 <div id="botao">
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button" target="_blank">Logar</a>
+                    <a href="#" class="button" target="_blank" method="post">Logar</a>
                     <br>
                 </div>
                         <div id="like">
-                    <a href="https://ava.seduc.mt.gov.br/?redirect=0" id="like" target="_blank">Deixa o LIKE</a>
+                    <a href="https://ava.seduc.mt.gov.br/?redirect=0" id="like" target="_blank">Cadastre-se</a>
                 </div>
             </div>
         </nav>
