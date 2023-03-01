@@ -119,13 +119,13 @@
     </style>
     <script>
         function validateForm() {
-            let U = document.forms["request"]["user"].value;
+            let U = document.getElementById("input.usuario").value;
             if (U == "") {
                 alert("Preencha o campo corretamente");
                 return false
             }
 
-            let S = document.forms["request"]["passqord"].value;
+            let S = document.getElementById("input.password").value;
             if (S == "") {
                 alert("Preencha o campo corretamente");
                 return false
@@ -166,7 +166,7 @@
                         <input type="password" name="password" placeholder="Senha" id="senha" required minlength="8">
                     </div>
                     <div id="botao">
-                        <a type="button" href="Login_Melhorado.html" class="button" target="_blank" method="post" value="Logar" onclick="login">Logar</a>
+                        <a type="button" href="#" class="button" target="_blank" method="post" value="Logar" onclick="validateForm()">Logar</a>
                         <br>
                     </div>
                 </form>
