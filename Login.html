@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html>
 
 <head lang="pt-br">
     <meta charset="UTF-8">
@@ -118,17 +118,17 @@
         }
     </style>
     <script>
-        function validateFormNome(){
-            let U= document.forms["user"]["Nome"].value;
-            if (U == ""){
+        function validateFormNome() {
+            let U = document.forms["user"]["Nome"].value;
+            if (U == "") {
                 alert("Digite seu nome");
                 return false
             }
         }
 
-        function validateFormSenha(){
+        function validateFormSenha() {
             let S = document.forms["password"]["Senha"].value;
-            if (S == ""){
+            if (S == "") {
                 alert("Digite sua senha");
                 return false
             }
@@ -145,15 +145,19 @@
                     <h3 id="log">LOUZERS</h3>
                 </div>
                 <h4>Login</h4>
-                <div id="ordem">
-                    <input type="text" name="user" placeholder="Usuário" id="usuario" required onsubmit="return validateFormNome()">
-                    <input type="password" name="password" placeholder="Senha" id="senha" required minlength="8" onsubmit="return validateFormSenha()">
-                </div>
-                <div id="botao">
-                    <a href="#" class="button" target="_blank" method="post">Logar</a>
-                    <br>
-                </div>
-                        <div id="like">
+                <form action="/">
+                    <div id="ordem">
+                        <input type="text" name="user" placeholder="Usuário" id="usuario" required
+                            onsubmit="return validateFormNome()">
+                        <input type="password" name="password" placeholder="Senha" id="senha" required minlength="8"
+                            onsubmit="return validateFormSenha()">
+                    </div>
+                    <div id="botao">
+                        <a href="#" class="button" target="_blank" method="post">Logar</a>
+                        <br>
+                    </div>
+                </form>
+                <div id="like">
                     <a href="https://ava.seduc.mt.gov.br/?redirect=0" id="like" target="_blank">Cadastre-se</a>
                 </div>
             </div>
