@@ -31,7 +31,7 @@
         #log {
             margin: 0;
             padding: 0;
-           font-size: 25px;
+            font-size: 25px;
         }
 
         .quadro_meio {
@@ -50,19 +50,23 @@
             box-shadow: 10px 5px 5px black;
             position: relative;
         }
+
         #ordem {
             margin-top: 15%;
             opacity: 0.75;
         }
+
         #ordem:hover {
             border: none;
             text-decoration: none;
         }
 
         #like {
-            text-decoration: none;
+            margin-top: 20%;
+            text-decoration: underline;
             color: rgb(175, 134, 210);
             font-family: Script MT;
+            text-decoration-color: rgb(175, 134, 210);
         }
 
         #like:hover {
@@ -71,12 +75,12 @@
         }
 
         .button {
-            padding-right: 65px;
-            padding-left: 65px;
+            padding: 5px 35px 5px 35px;
             background-color: Black;
             color: white;
             box-shadow: 5px 5px 7px rgb(25, 0, 102);
             margin-bottom: 25%;
+            text-decoration: none;
         }
 
         .button:hover {
@@ -129,8 +133,10 @@
                     <input type="password" name="Senha" placeholder="Senha" id="senha">
                 </div>
                 <div id="botao">
-                    <button class="button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Login</button>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button" target="_blank">Logar</a>
                     <br>
+                </div>
+                        <div id="like">
                     <a href="https://ava.seduc.mt.gov.br/?redirect=0" id="like" target="_blank">Deixa o LIKE</a>
                 </div>
             </div>
