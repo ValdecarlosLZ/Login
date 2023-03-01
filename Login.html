@@ -40,9 +40,9 @@
             float: left;
             margin-left: 39%;
             margin-top: 10%;
-            border: 1px solid gray;
+            border: 1px solid black;
             border-radius: 10px;
-            background-image: url(Assets/fundo\ preto-01.jpg);
+            background-image: url(fundo\ preto-01.jpg);
             background-size: 100%;
             /* background:  ; */
             text-decoration: none;
@@ -54,11 +54,16 @@
             margin-top: 15%;
             opacity: 0.75;
         }
+        #ordem:hover {
+            border: none;
+            text-decoration: none;
+        }
 
         #like {
             text-decoration: none;
             color: rgb(51, 0, 102);
             font-family: Script MT;
+            /* margin-top: 5%; */
         }
 
         #like:hover {
@@ -72,11 +77,11 @@
             background-color: Black;
             color: white;
             box-shadow: 5px 5px 7px rgb(25, 0, 102);
-
+            margin-bottom: 25%;
         }
 
         .button:hover {
-            background-color: rgb(0, 25, 51);
+            background-color: rgb(43, 35, 54);
         }
 
         #botao {
@@ -95,10 +100,14 @@
 
         #senha {
             border-radius: 5px;
+            opacity: 1;
+            margin-bottom: 10%;
         }
 
         #usuario {
             border-radius: 5px;
+            opacity: 1;
+            margin-bottom: 5%;
         }
     </style>
 </head>
@@ -114,21 +123,12 @@
                 <h4>Se inscreva no canal</h4>
                 <div id="ordem">
                     <input type="text" name="Usuario" placeholder="Usuário" id="usuario">
-                    <br>
-                    <br>
                     <input type="password" name="Senha" placeholder="Senha" id="senha">
-                    <br>
-                    <br>
                 </div>
                 <div id="botao">
-                    <button class="button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                        target="_blank">Login</button>
+                    <button class="button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Login</button>
                     <br>
-                    <br>
-                    <br>
-                    <br>
-
-                    <a href="http://login.fwcaptiveportal.local:8090/" id="like" target="_blank">Deixa o LIKE</a>
+                    <a href="https://ava.seduc.mt.gov.br/?redirect=0" id="like" target="_blank">Deixa o LIKE</a>
                 </div>
             </div>
         </nav>
