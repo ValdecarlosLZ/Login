@@ -13,6 +13,8 @@
     echo "<p><h2>Login executado com sucesso! </h2></p><hr>";
     echo "Usuário: " . $_GET['user'] . "<hr>";
     echo "Senha: " . $_GET['password'] . "<hr>";
+    ?>
+    <?php
     echo "Usuário: " . $_POST['user'] . "<hr>";
     echo "Senha: " . $_POST['password'] . "<hr>";
     ?>
