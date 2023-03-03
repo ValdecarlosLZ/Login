@@ -28,7 +28,7 @@
         }
 
         #nome {
-            size: 6px;
+            size: 4px;
             margin-left: 38%;
             margin-top: -8%;
             color: rgb(152, 111, 168);
@@ -38,25 +38,15 @@
             z-index: 2;
             max-width: 27%;
             max-height: 27%;
+            /* }
 
-        }
-
-        header {
-            height: 100%;
-            border-right: 0.5px solid black;
+        #nome.border { */
+            border-right: 1px solid black;
+            padding-right: 26%;
         }
 
         .header {
             padding-top: 3%;
-            border-bottom: 1px solid black;
-            /* height: 2%;
-            border-right: 0.5px solid black; */
-        }
-
-        #botoes {
-            height: 100%;
-            border-right: 1px solid black;
-            z-index: 3;
         }
 
         .login {
@@ -69,7 +59,7 @@
             padding: 3px 20px 3px 20px;
             max-width: fit-content;
             font-family: Baskerville Old Face;
-            margin-left: 94%;
+            margin-left: 93%;
             margin-top: -6%;
             z-index: 5;
 
@@ -90,7 +80,7 @@
             max-width: fit-content;
             font-size: 13px;
             font-family: Baskerville Old Face;
-            margin-left: 93%;
+            margin-left: 92%;
             z-index: 5;
         }
 
@@ -122,11 +112,20 @@
             background: #32235e;
         }
 
-        #lowbar {
+        #baseHeader {
             background-color: black;
-            margin: 2px;
-            margin-top: 2%;
+
+            border-top: 2px solid black;
+
             opacity: 0.5;
+        }        
+
+        h1 {
+            font-size: 72px;
+            background: -webkit-linear-gradient(#890681,#890681, #5b0992, #000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
         }
     </style>
 </head>
@@ -142,14 +141,16 @@
                 <img src="Nome-02.png" id="nome">
             </div>
             <div id="botoes">
-                <a href="Login_Melhorado.html" type="button" name="entrar" class="login" target="_blank">Login</a>            
+                <a href="Login_Melhorado.html" type="button" name="entrar" class="login" target="_blank">Login</a>
                 <a href="#" type="button" name="criar" class="cadastro" target="_blank">Cadastre-se</a>
             </div>
             <div class="header">
             </div>
+            <div id="baseHeader">
+            </div>
         </nav>
     </header>
-
+    <Center><h1>Louzers</h1></Center>
 </body>
 
 </html>
