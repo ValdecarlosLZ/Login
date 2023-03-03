@@ -161,12 +161,13 @@
                 <h4>Login</h4>
                 <form name="request" action="/action_page.php" onsubmit="return validateForm()" method="post">
                     <div id="ordem">
-
-                        <input type="text" name="user" placeholder="Usuário" id="usuario" required>
-                        <input type="password" name="password" placeholder="Senha" id="senha" required minlength="8">
+                        <form method="get" action="processo.php">
+                        <input type="text" name="user" placeholder="Usuário" id="usuario" required="required">
+                        <input type="password" name="password" placeholder="Senha" id="senha" required="required" minlength="8">
+                    </form>
                     </div>
                     <div id="botao">
-                        <a type="button" href="Louzers Site/Louzers Site.html" class="button" target="_blank" method="post" value="Logar" onclick="validateForm()">Logar</a>
+                        <a type="button" href="processo.php" class="button" target="_blank" method="post" value="Logar" onclick="validateForm()">Logar</a>
                         <br>
                     </div>
                 </form>
@@ -176,6 +177,9 @@
             </div>
         </nav>
     </header>
+    
+    
+
 </body>
 
 </html>
