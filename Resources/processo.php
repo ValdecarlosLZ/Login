@@ -1,23 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+$user = $_POST["user"];
+$password = $_POST["password"];
+$erro = FALSE;
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dados</title>
-</head>
+if(empty($user)OR strstr($user,'')){
+    print_r("Inseira seu nome de usuário");
+    $erro = true;
+}
 
-<body>
-    <?php
-    echo "<p><h2>Login executado com sucesso! </h2></p><hr>";
-    echo "Usuário: " . $_GET['user'] . "<hr>";
-    echo "Senha: " . $_GET['password'] . "<hr>";
+if(empty($password) OR strlen($password)< 8){
+    print_r("Insira uma senha valida (maior que 8 digitos)");
+    $erro = true;
+}
     ?>
-    <?php
-    echo "Usuário: " . $_POST['user'] . "<hr>";
-    echo "Senha: " . $_POST['password'] . "<hr>";
-    ?>
-</body>
-
-</html>
