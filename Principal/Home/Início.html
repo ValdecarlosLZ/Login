@@ -13,26 +13,27 @@
 
         body {
             background-image: url(Nebula.png);
-            
+            background-attachment: fixed;
         }
 
         #logoI {
             height: 100px;
             width: 100px;
         }
-        h4{
+
+        h4 {
             font-size: 60px;
-            margin-left: 800px;
+            margin-left: 600px;
             margin-top: -100px;
-            font-family: brillia Free Demo;
-            background-color: rgb(147,67,171);
-            background-size: height 30px width 110px;
-            color: rgb(65,37,121);
-            text-shadow: 5px 0 rgb(0, 0, 0), -5px 0 rgb(0, 0, 0), 0 5px rgb(0, 0, 0),rgb(0, 0, 0)5px rgb(0, 0, 0),
-               3px 3px rgb(0, 0, 0), -3px -3px rgb(0, 0, 0), 3px -3px rgb(0, 0, 0), -3px 3px rgb(0, 0, 0);
-
+            font-family: Baskerville Old Face;
+            color: rgb(152, 111, 168);
+            text-shadow: 4px 4px 5px black;
+            border: solid 1px black;
+            position: relative;
+            display: block;
+            z-index: 2;
         }
-
+        
         .botoes {
             border-radius: 10px 10px;
             position: to left;
@@ -40,37 +41,36 @@
 
         .login {
             border-radius: 6px 6px;
-            color: rgb(88,13,116);
+            color: rgb(88, 13, 116);
         }
 
         .cadastro {
-            color: rgb(88,13,116);
+            color: rgb(88, 13, 116);
         }
-        
+
         /* size */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #5b5b5b;
-  opacity: 0.7;
-}
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #5b5b5b;
+            opacity: 0.7;
+        }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #201f1f;
-  border-radius: 3px;
-  opacity: 0.1;
-}
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #201f1f;
+            border-radius: 3px;
+            opacity: 0.1;
+        }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #32235e;
-}
-        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #32235e;
+        }
     </style>
 </head>
 
@@ -78,13 +78,16 @@
     <header>
         <div> <img src="Logo inteira.png" id="logoI"></div>
 
-            <div><h4>Louzers</h4></div>
-            <nav>
-        <div class="botoes">
-            <button><strong>Login</strong></button></div>
-            <button><strong>Cadastre-se</strong></button></div>
+        <div>
+            <h4>Louzers</h4>
         </div>
-        
+        <nav>
+            <div class="botoes">
+                <button><strong>Login</strong></button>
+            </div>
+            <button><strong>Cadastre-se</strong></button></div>
+            </div>
+
 
         </nav>
     </header>
