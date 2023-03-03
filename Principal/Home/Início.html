@@ -34,24 +34,44 @@
             z-index: 2;
         }
 
-        .botoes {
+        #botoes {
             border-radius: 10px 10px;
-            position: Right;
-            display: inline;
+
+            display: block;
+            z-index: 3;
         }
 
-        #login {
-            border-radius: 6px 6px;
-            background-color: rgb(88, 13, 116);
-            color:rgb(183, 151, 196);
-            display: inline;
-        }
-
-        #cadastro {
+        .login {
             border-radius: 6px 6px;
             background-color: rgb(88, 13, 116);
             color: rgb(183, 151, 196);
-            display: inline; 
+            display: block;
+            text-decoration: none;
+            font-size: 13px;
+            padding: 3px 20px 3px 20px;
+            max-width: fit-content;
+            font-family: Baskerville Old Face;
+        }
+
+        .login:hover:hover {
+            background-color: rgb(43, 35, 54);
+        }
+
+        .cadastro {
+            border-radius: 6px 6px;
+            background-color: rgb(88, 13, 116);
+            color: rgb(183, 151, 196);
+            display: block;
+            text-decoration: none;
+            padding: 3px 20px 3px 20px;
+            margin-top: 4px;
+            max-width: fit-content;
+            font-size: 13px;
+            font-family: Baskerville Old Face;
+        }
+
+        .cadastro:hover {
+            background-color: rgb(43, 35, 54);
         }
 
         /* size */
@@ -82,18 +102,20 @@
 
 <body>
     <header>
-        <div> <img src="Logo inteira.png" id="logoI"></div>
-
-        <div>
-            <h4>Louzers</h4>
-        </div>
         <nav>
-            <div class="botoes">
-                <a href="Login.html" type="button" name="entrar" id="login" target="_blank">Login</a>
-            </div>
+            <div> <img src="Logo inteira.png" id="logoI"></div>
+
             <div>
-                <a type="button" name="criar" id="cadastro" >Cadastre-se</a>
+                <h4>Louzers</h4>
+                <div id="botoes">
+                    <a href="Login_Melhorado.html" type="button" name="entrar" class="login" target="_blank">Login</a>
+                </div>
+                <div id="botoes">
+                    <a href="#" type="button" name="criar" class="cadastro" target="_blank">Cadastre-se</a>
+                </div>
             </div>
+
+
 
         </nav>
     </header>
