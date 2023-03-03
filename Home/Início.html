@@ -20,7 +20,11 @@
             height: 100px;
             width: 100px;
             z-index: 0;
+        }
 
+        #logoI::content {
+            height: 100%;
+            border-right: 1px solid black;
         }
 
         #nome {
@@ -32,17 +36,28 @@
             position: relative;
             display: block;
             z-index: 2;
-            max-width: 27%;    
+            max-width: 27%;
             max-height: 27%;
 
         }
 
-        /* #botoes {
-            border-radius: 10px 10px;
-            align-content: flex-end;
-            display: inline-block;
+        header {
+            height: 100%;
+            border-right: 0.5px solid black;
+        }
+
+        .header {
+            padding-top: 3%;
+            border-bottom: 1px solid black;
+            /* height: 2%;
+            border-right: 0.5px solid black; */
+        }
+
+        #botoes {
+            height: 100%;
+            border-right: 1px solid black;
             z-index: 3;
-        } */
+        }
 
         .login {
             border-radius: 6px 6px;
@@ -57,6 +72,7 @@
             margin-left: 94%;
             margin-top: -6%;
             z-index: 5;
+
         }
 
         .login:hover:hover {
@@ -105,6 +121,13 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #32235e;
         }
+
+        #lowbar {
+            background-color: black;
+            margin: 2px;
+            margin-top: 2%;
+            opacity: 0.5;
+        }
     </style>
 </head>
 
@@ -119,13 +142,14 @@
                 <img src="Nome-02.png" id="nome">
             </div>
             <div id="botoes">
-                <a href="Login_Melhorado.html" type="button" name="entrar" class="login" target="_blank">Login</a>
-            </div>
-            <div id="botoes">
+                <a href="Login_Melhorado.html" type="button" name="entrar" class="login" target="_blank">Login</a>            
                 <a href="#" type="button" name="criar" class="cadastro" target="_blank">Cadastre-se</a>
+            </div>
+            <div class="header">
             </div>
         </nav>
     </header>
+
 </body>
 
 </html>
