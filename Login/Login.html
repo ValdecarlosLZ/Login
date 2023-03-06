@@ -133,11 +133,11 @@
         }
 
         const button = document.querySelector('input');
-            button.addEventListener('click', login);
-        async function login(){
+        button.addEventListener('click', login);
+        async function login() {
             statements
             return youtube.com
-            
+
         }
 
         // function validateFormSenha() {
@@ -151,6 +151,7 @@
 </head>
 
 <body translate="no">
+    <?php?>
     <header>
         <nav>
 
@@ -162,12 +163,14 @@
                 <form name="request" action="/action_page.php" onsubmit="return validateForm()" method="post">
                     <div id="ordem">
                         <form method="get" action="processo.php">
-                        <input type="text" name="user" placeholder="Usuário" id="usuario" required="required">
-                        <input type="password" name="password" placeholder="Senha" id="senha" required="required" minlength="8">
-                    </form>
+                            <input type="text" name="user" placeholder="Usuário" id="usuario" required="required">
+                            <input type="password" name="password" placeholder="Senha" id="senha" required="required"
+                                minlength="8">
+                        </form>
                     </div>
                     <div id="botao">
-                        <a type="button" href="#" class="button" target="_blank" method="post" value="Logar" onclick="validateForm()">Logar</a>
+                        <a type="button" href="#" class="button" target="_blank" method="post" value="Logar"
+                            onclick="validateForm()">Logar</a>
                         <br>
                     </div>
                 </form>
@@ -177,8 +180,8 @@
             </div>
         </nav>
     </header>
-    
-    
+
+
 
 </body>
 
