@@ -11,8 +11,8 @@
         }
 
         body {
-            background-image: url(Assets/Nebula.png);
-            background-attachment: fixed;
+            background-image: url(Nebula.png);
+            background-attachment: fixed
         }
 
         #logo {
@@ -40,10 +40,10 @@
             height: 400px;
             float: left;
             margin-left: 39%;
-            margin-top: 10%;
+            margin-top: 15%;
             border: 1px solid black;
             border-radius: 10px;
-            background-image: url(Assets/fundo\ preto-01.jpg);
+            background-image: url(fundo\ preto-01.jpg);
             background-size: 100%;
             text-decoration: none;
             padding: 0;
@@ -119,13 +119,13 @@
     </style>
     <script>
         function validateForm() {
-            let U = document.getElementById("input.usuario").value;
+            let U = document.forms["request"]["user"].value;
             if (U == "") {
                 alert("Preencha o campo corretamente");
                 return false
             }
 
-            let S = document.getElementById("input.password").value;
+            let S = document.forms["request"]["passqord"].value;
             if (S == "") {
                 alert("Preencha o campo corretamente");
                 return false
@@ -133,11 +133,11 @@
         }
 
         const button = document.querySelector('input');
-        button.addEventListener('click', login);
-        async function login() {
+            button.addEventListener('click', login);
+        async function login(){
             statements
             return youtube.com
-
+            
         }
 
         // function validateFormSenha() {
@@ -151,26 +151,23 @@
 </head>
 
 <body translate="no">
-    <?php?>
+  
     <header>
         <nav>
 
             <div class="quadro_meio">
                 <div id="logo">
-                    <h3 id="log">LOUZERS</h3>
+                    <h3 id="log" data-value="TESTE  ">LOUZERS</h3>
                 </div>
-                <h4>Login</h4>
+                <h4 data-value="Login">Login</h4>
                 <form name="request" action="/action_page.php" onsubmit="return validateForm()" method="post">
                     <div id="ordem">
-                        <form method="get" action="processo.php">
-                            <input type="text" name="user" placeholder="Usuário" id="usuario" required="required">
-                            <input type="password" name="password" placeholder="Senha" id="senha" required="required"
-                                minlength="8">
-                        </form>
+
+                        <input type="text" name="user" placeholder="Usuário" id="usuario" required>
+                        <input type="password" name="password" placeholder="Senha" id="senha" required minlength="8">
                     </div>
                     <div id="botao">
-                        <a type="button" href="#" class="button" target="_blank" method="post" value="Logar"
-                            onclick="validateForm()">Logar</a>
+                        <a type="button" href="Login_Melhorado.html" class="button" target="_blank" method="post" value="Logar" onclick="login">Logar</a>
                         <br>
                     </div>
                 </form>
@@ -180,7 +177,35 @@
             </div>
         </nav>
     </header>
+    <script src="Test2.js"></script>
+    <!-- <script>const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+        let interval = null;
+        
+        document.querySelector("h4").onmouseover = event => {
+            let iteration = 0;
+        
+            clearInterval(interval);
+        
+            interval = setInterval(() => {
+                event.target.innerText = event.target.innerText
+                    .split("")
+                    .map((letter, index) => {
+                        if (index < iteration) {
+                            return event.target.dataset.value[index];
+                        }
+        
+                        return letters[Math.floor(Math.random() * 26)]
+                    })
+                    .join("");
+        
+                if (iteration >= event.target.dataset.value.length) {
+                    clearInterval(interval);
+                }
+        
+                iteration += 1 / 3;
+            }, 30);
+        }</script> -->
 </body>
 
 </html>
