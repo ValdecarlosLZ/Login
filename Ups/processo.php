@@ -1,4 +1,7 @@
 <?php
+
+// $_SESSION 
+
 $user = $_POST["user"];
 $password = $_POST["password"];
 $erro = FALSE;
