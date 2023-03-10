@@ -2,7 +2,7 @@ const letters = "abcdefghijklmnopqrstuvwxyz";
 
 let interval = null;
 
-document.querySelector("h1").onmouseover = event => {
+document.querySelector("h3").onmouseover = event => {
     let iteration = 0;
 
     clearInterval(interval);
