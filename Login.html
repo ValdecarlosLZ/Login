@@ -125,7 +125,7 @@
                 return false
             }
 
-            let S = document.forms["request"]["passqord"].value;
+            let S = document.forms["request"]["password"].value;
             if (S == "") {
                 alert("Preencha o campo corretamente");
                 return false
@@ -160,7 +160,7 @@
                     <h3 id="log" data-value="LOUZERS">LOUZERS</h3>
                 </div>
                 <h4 data-value="Login">Login</h4>
-                <form name="request" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                <form name="request" action="Ups/processo.php" onsubmit="return validateForm()" method="post">
                     <div id="ordem">
 
                         <input type="text" name="user" placeholder="Usuário" id="usuario" required>
